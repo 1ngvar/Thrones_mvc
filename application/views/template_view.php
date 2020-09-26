@@ -19,8 +19,8 @@ Modified by VitalySwipe
 		<title>ОЛОЛОША TEAM</title>
 		<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
 		<link href="http://fonts.googleapis.com/css?family=Kreon" rel="stylesheet" type="text/css" />
-		<link rel="stylesheet" type="text/css" href="/css/style.css" />
-		<script src="/js/jquery-1.6.2.js" type="text/javascript"></script>
+		<link rel="stylesheet" type="text/css" href="<?php echo BASE_URL ?>/css/style.css" />
+		<script src="<?php echo BASE_URL ?>/js/jquery-1.6.2.js" type="text/javascript"></script>
 		<script type="text/javascript">
 		// return a random integer between 0 and number
 		function random(number) {
@@ -43,14 +43,14 @@ Modified by VitalySwipe
 		<div id="wrapper">
 			<div id="header">
 				<div id="logo">
-					<a href="/">ОЛОЛОША</span> <span class="cms">TEAM</span></a>
+					<a href="<?php echo BASE_URL ?>">ОЛОЛОША</span> <span class="cms">TEAM</span></a>
 				</div>
 				<div id="menu">
 					<ul>
-						<li class="first active"><a href="/">Главная</a></li>
-						<li><a href="/services">Услуги</a></li>
-						<li><a href="/portfolio">Портфолио</a></li>
-						<li class="last"><a href="/contacts">Контакты</a></li>
+						<li class="first active"><a href="<?php echo BASE_URL ?>">Главная</a></li>
+						<li><a href="<?php echo BASE_URL ?>/services">Услуги</a></li>
+						<li><a href="<?php echo BASE_URL ?>/portfolio">Портфолио</a></li>
+						<li class="last"><a href="<?php echo BASE_URL ?>/contacts">Контакты</a></li>
 					</ul>
 					<br class="clearfix" />
 				</div>
@@ -64,7 +64,7 @@ Modified by VitalySwipe
 						Нельзя сразу написать идеальный вариант и на этом откланяться - это утопия»
 						</p>
 						<p align="justify" class="quote"><!-- &copy; Vitaly Swipe -->
-						«Все должно быть очень просто, как текстовый файл и при этом функционально
+						«Все должно быть очень просто, как текстовый файл, и при этом функционально –
 						и тогда пользователи от нас уйдут»
 						</p>
 						<p align="justify" class="quote">
@@ -81,10 +81,10 @@ Modified by VitalySwipe
 					<div class="side-box">
 						<h3>Основное меню</h3>
 						<ul class="list">
-							<li class="first "><a href="/">Главная</a></li>
-							<li><a href="/services">Услуги</a></li>
-							<li><a href="/portfolio">Портфолио</a></li>
-							<li class="last"><a href="/contacts">Контакты</a></li>
+							<li class="first "><a href="<?php echo BASE_URL ?>">Главная</a></li>
+							<li><a href="<?php echo BASE_URL ?>/services">Услуги</a></li>
+							<li><a href="<?php echo BASE_URL ?>/portfolio">Портфолио</a></li>
+							<li class="last"><a href="<?php echo BASE_URL ?>/contacts">Контакты</a></li>
 						</ul>
 					</div>
 				</div>
@@ -141,7 +141,7 @@ Modified by VitalySwipe
 			</div>
 		</div>
 		<div id="footer">
-			<a href="/">ОЛОЛОША TEAM</a> &copy; 2012</a>
+			<a href="<?php echo BASE_URL ?>">ОЛОЛОША TEAM</a> &copy; 2012</a>
 		</div>
 	</body>
 </html>

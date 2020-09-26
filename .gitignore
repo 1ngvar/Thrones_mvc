@@ -7,16 +7,9 @@
 *.iml
 out
 gen
-.htaccess
 .idea/.gitignore
 .idea/MVC.iml
 .idea/deployment.xml
 .idea/inspectionProfiles/
 .idea/misc.xml
 .idea/modules.xml
-application/
-core/
-css/
-img/
-index.php
-js/

@@ -1,4 +1,5 @@
 <?php
+require_once 'config.php';
 
 // подключаем файлы ядра
 require_once 'core/model.php';
