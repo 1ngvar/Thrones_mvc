@@ -63,15 +63,15 @@ Modified by VitalySwipe
 						«Сайт, как живой организм, изменяется и развивается.
 						Нельзя сразу написать идеальный вариант и на этом откланяться - это утопия»
 						</p>
-						<p align="justify" class="quote"><!-- &copy; Vitaly Swipe -->
-						«Все должно быть очень просто, как текстовый файл, и при этом функционально –
+						<p align="justify" class="quote">
+						«Всё должно быть очень просто, как текстовый файл, и при этом функционально –
 						и тогда пользователи от нас уйдут»
 						</p>
 						<p align="justify" class="quote">
-						«Критика - это когда критик объясняет автору, как сделал бы он, если бы умел»
+						«Критика – это когда критик объясняет автору, как сделал бы он, если бы умел»
 						</p>
-						<p align="justify" class="quote"><!-- &copy; Vitaly Swipe -->
-						«Сумасшедшим становиться тот, кто попытался разобраться в этом сумасшедшем мире»
+						<p align="justify" class="quote">
+						«Сумасшедшим становится тот, кто попытался разобраться в этом сумасшедшем мире»
 						</p>
 						<p align="justify" class="quote">
 						«Опытный разработчик знает, какой выбор ведет к поставленной цели, в то время как
@@ -93,7 +93,7 @@ Modified by VitalySwipe
 						<?php include 'application/views/'.$content_view; ?>
 						<!--
 						<h2>Welcome to Accumen</h2>
-						<img class="alignleft" src="images/pic01.jpg" width="200" height="180" alt="" />
+						<img class="alignleft" src="<?php echo BASE_URL ?>images/pic01.jpg" width="200" height="180" alt="" />
 						<p>
 							This is <strong>Accumen</strong>, a free, fully standards-compliant CSS template by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>. The images used in this template are from <a href="http://fotogrph.com/">Fotogrph</a>. This free template is released under a <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attributions 3.0</a> license, so you are pretty much free to do whatever you want with it (even use it commercially) provided you keep the footer credits intact. Aside from that, have fun with it :)
 						</p>
@@ -107,9 +107,9 @@ Modified by VitalySwipe
 				<div id="page-bottom-sidebar">
 					<h3>Наши контакты</h3>
 					<ul class="list">
-						<li class="first">icq: 199199538</li>
-						<li>skypeid: vitalyswipe</li>
-						<li class="last">email: vitalyswipe@gmail.com</li>
+						<li class="first">LinkedIn: <a href="https://www.linkedin.com/in/igor-prymak-69b239b4/" title="ingvar"> Igor Prymak</a> </li>
+						<li>github: <a href="https://github.com/1ngvar" title="ingvar">ingvar</a> </li>
+						<li class="last">email:  1ngvar@protonmail.com</li>
 					</ul>
 				</div>
 				<div id="page-bottom-content">
@@ -141,7 +141,7 @@ Modified by VitalySwipe
 			</div>
 		</div>
 		<div id="footer">
-			<a href="<?php echo BASE_URL ?>">ОЛОЛОША TEAM</a> &copy; 2012</a>
+			<a href="<?php echo BASE_URL ?>">ОЛОЛОША TEAM</a> &copy; <?php echo date('Y'); ?></a>
 		</div>
 	</body>
 </html>
