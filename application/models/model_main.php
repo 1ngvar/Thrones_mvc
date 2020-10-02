@@ -1,62 +1,53 @@
 <?php
 
-class Model_Portfolio extends Model
+class Model_Main extends Model
 {
 	
 	public function get_data()
-	{	
-
+	{
 		return array(
-
 			array(
-				'Year' => '2012',
-				'Site' => 'http://DunkelBeer.ru',
-				'Description' => 'Промо-сайт темного пива Dunkel от немецкого производителя Löwenbraü выпускаемого в России пивоваренной компанией "CАН ИнБев".'
+				'House' => 'Baratheon',
+				'Sigil' => 'A crowned stag',
+				'Motto' => 'Ours is the Fury',
 			),
-
 			array(
-				'Year' => '2012',
-				'Site' => 'http://ZopoMobile.ru',
-				'Description' => 'Русскоязычный каталог китайских телефонов компании Zopo на базе Android OS и аксессуаров к ним.'
+				'Leader' => 'Eddard Stark',
+				'House' => 'Stark',
+				'Motto' => 'Winter is Coming',
+				'Sigil' => 'A grey direwolf'
 			),
-
 			array(
-				'Year' => '2012',
-				'Site' => 'http://GeekWear.ru',
-				'Description' => 'Интернет-магазин брендовой одежды для гиков.'
+				'House' => 'Lannister',
+				'Leader' => 'Tywin Lannister',
+				'Sigil' => 'A golden lion'
 			),
-
 			array(
-				'Year' => '2011',
-				'Site' => 'http://РоналВарвар.рф',
-				'Description' => 'Промо-сайт мультфильма "Ронал-варвар" от норвежских режиссеров. Мультфильм о самом нетипичном варваре на Земле, переполненный интересными приключениями и забавными ситуациями.'
-			),
-
-			array(
-				'Year' => '2011',
-				'Site' => 'http://TompsonTatoo.ru',
-				'Description' => 'Персональный сайт-блог художника-татуировщика Алексея Томпсона из Санкт-Петербурга.'
-			),
-
-			array(
-				'Year' => '2011',
-				'Site' => 'http://DaftState.ru',
-				'Description' => 'Страничка музыкальных и сануд продюсеров из команды "DaftState", работающих в стилях BreakBeat и BigBeat.'
-			),
-
-			array(
-				'Year' => '2011',
-				'Site' => 'http://TiltPeople.ru',
-				'Description' => 'Сайт сообщества фотографов в стиле Tilt Shif.'
-			),
-
-			array(
-				'Year' => '2011',
-				'Site' => 'http://AbsurdGames.ru',
-				'Description' => 'Страничка российской команды разработчиков независимых игр с необычной физикой и сюрреалистической графикой.'
-			),
-
+				'Q' => 'Z'
+			)
 		);
 	}
 
+}
+
+// Getting the data we need to build a table from arrays
+function parse_arrays($data) {
+	// Forming one array out of a multidimensional by merging values with repetitive keys
+	$merged_arrays = merge_arrays( $data );
+
+	print_r( $merged_arrays );
+}
+
+
+function merge_arrays($arrays) {
+	$merged_arrays = array();
+
+	// Getting real count of indexes inside a multidimensional
+	$i = count($arrays) - 1;
+
+	while ($i >= 0)  {
+		$merged_arrays = array_merge_recursive($merged_arrays, $arrays[$i]);
+		$i--;
+	}
+	return $merged_arrays;
 }

@@ -1,4 +1,4 @@
-<h1>Контакты</h1>
+<h1>Contacts</h1>
 <p>
     <ul class="list list-unstyled">
     <li class="first">LinkedIn: <a href="https://www.linkedin.com/in/igor-prymak-69b239b4/" title="ingvar"> Igor Prymak</a> </li>

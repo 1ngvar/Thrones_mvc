@@ -1,36 +1,20 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!--
-Design by Free CSS Templates
-http://www.freecsstemplates.org
-Released for free under a Creative Commons Attribution 3.0 License
-
-Name       : Accumen
-Description: A two-column, fixed-width design with dark color scheme.
-Version    : 1.0
-Released   : 20120712
-
-Modified by VitalySwipe
--->
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
-		<title>ОЛОЛОША TEAM</title>
+		<title>Game of Thrones</title>
 		<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
 		<link href="http://fonts.googleapis.com/css?family=Kreon" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" type="text/css" href="<?php echo BASE_URL ?>/css/style.css" />
 		<script src="<?php echo BASE_URL ?>/js/jquery-1.6.2.js" type="text/javascript"></script>
 		<script type="text/javascript">
 		// return a random integer between 0 and number
-		function random(number) {
-			
-			return Math.floor( Math.random()*(number+1) );
-		};
+		function random(number) { return Math.floor( Math.random()*(number+1) ); };
 		
 		// show random quote
-		$(document).ready(function() { 
-
+		$(document).ready(function() {
 			var quotes = $('.quote');
 			quotes.hide();
 			
@@ -42,23 +26,20 @@ Modified by VitalySwipe
 	<body>
 		<div id="wrapper">
 			<div id="header">
-				<div id="logo">
-					<a href="<?php echo BASE_URL ?>">ОЛОЛОША</span> <span class="cms">TEAM</span></a>
-				</div>
 				<div id="menu">
 					<ul>
-						<li class="first active"><a href="<?php echo BASE_URL ?>">Главная</a></li>
-						<li><a href="<?php echo BASE_URL ?>/services">Услуги</a></li>
+						<li class="first active"><a href="<?php echo BASE_URL ?>">Houses</a></li>
 						<li><a href="<?php echo BASE_URL ?>/portfolio">Портфолио</a></li>
-						<li class="last"><a href="<?php echo BASE_URL ?>/contacts">Контакты</a></li>
-					</ul>
+						<li class="last"><a href="<?php echo BASE_URL ?>/contacts">Contacts</a></li>
+                        <li><a href="<?php echo BASE_URL ?>/services">404</a></li>
+                    </ul>
 					<br class="clearfix" />
 				</div>
 			</div>
 			<div id="page">
 				<div id="sidebar">
 					<div class="side-box">
-						<h3>Случайная цитата</h3>
+						<h3>Random quote</h3>
 						<p align="justify" class="quote">
 						«Сайт, как живой организм, изменяется и развивается.
 						Нельзя сразу написать идеальный вариант и на этом откланяться - это утопия»
@@ -79,25 +60,18 @@ Modified by VitalySwipe
 						</p>
 					</div>
 					<div class="side-box">
-						<h3>Основное меню</h3>
-						<ul class="list">
-							<li class="first "><a href="<?php echo BASE_URL ?>">Главная</a></li>
-							<li><a href="<?php echo BASE_URL ?>/services">Услуги</a></li>
-							<li><a href="<?php echo BASE_URL ?>/portfolio">Портфолио</a></li>
-							<li class="last"><a href="<?php echo BASE_URL ?>/contacts">Контакты</a></li>
-						</ul>
+                        <br>
+						<h3>Inner workings</h3>
+						<?php
+                        echo "Model: " . $GLOBALS['model_name '] . "<br>";
+                        echo "Controller: " . $GLOBALS['controller_name '] . "<br>";
+                        echo "Action: " . $GLOBALS['action_name '] . "<br>";
+						?>
 					</div>
 				</div>
 				<div id="content">
 					<div class="box">
 						<?php include 'application/views/'.$content_view; ?>
-						<!--
-						<h2>Welcome to Accumen</h2>
-						<img class="alignleft" src="<?php echo BASE_URL ?>images/pic01.jpg" width="200" height="180" alt="" />
-						<p>
-							This is <strong>Accumen</strong>, a free, fully standards-compliant CSS template by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>. The images used in this template are from <a href="http://fotogrph.com/">Fotogrph</a>. This free template is released under a <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attributions 3.0</a> license, so you are pretty much free to do whatever you want with it (even use it commercially) provided you keep the footer credits intact. Aside from that, have fun with it :)
-						</p>
-						-->
 					</div>
 					<br class="clearfix" />
 				</div>
@@ -105,7 +79,7 @@ Modified by VitalySwipe
 			</div>
 			<div id="page-bottom">
 				<div id="page-bottom-sidebar">
-					<h3>Наши контакты</h3>
+					<h3>My contacts</h3>
 					<ul class="list">
 						<li class="first">LinkedIn: <a href="https://www.linkedin.com/in/igor-prymak-69b239b4/" title="ingvar"> Igor Prymak</a> </li>
 						<li>github: <a href="https://github.com/1ngvar" title="ingvar">ingvar</a> </li>
@@ -113,35 +87,20 @@ Modified by VitalySwipe
 					</ul>
 				</div>
 				<div id="page-bottom-content">
-					<h3>О Компании</h3>
+					<h3>About me</h3>
 					<p>
-Вот дом.
-Который построил Джек.
-
-А это пшеница.
-Которая в тёмном чулане хранится
-В доме,
-Который построил Джек.
-
-А это весёлая птица-синица,
-Которая ловко ворует пшеницу,
-Которая в тёмном чулане хранится
-В доме,
-Который построил Джек.
-
-Вот кот,
-Который пугает и ловит синицу,
-Которая ловко ворует пшеницу,
-Которая в тёмном чулане хранится
-В доме,
-Который построил Джек.
-					</p>
+                        As a freelancer I’ve developed and took part in development of dozens of websites both static and powered by Wordpress, Joomla, Drupal and OpenCart.
+                        <br/>
+                        I also have experience writing custom MVC backend and React/JQuery Frontend
+                        <br/>
+                        This experience has taught me that key ability in my field is being able to trace and cope with any kind of issue whenever and wherever it arises
+                    </p>
 				</div>
 				<br class="clearfix" />
 			</div>
 		</div>
 		<div id="footer">
-			<a href="<?php echo BASE_URL ?>">ОЛОЛОША TEAM</a> &copy; <?php echo date('Y'); ?></a>
+			<a href="https://www.linkedin.com/in/igor-prymak-69b239b4/"> Igor Prymak</a> &copy; <?php echo date('Y'); ?></a>
 		</div>
 	</body>
 </html>
