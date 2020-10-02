@@ -8,10 +8,15 @@
 /*
     Custom code
 */
+section.description {margin-bottom: 35px;}
 
 section.table {
     float: left;
     margin-top: 20px;
+}
+
+.table th {
+    padding: 9px;
 }
 
 .page_404 h4 { font-weight: bold; }
