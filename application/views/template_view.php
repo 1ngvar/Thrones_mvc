@@ -29,7 +29,6 @@
 				<div id="menu">
 					<ul>
 						<li class="first active"><a href="<?php echo BASE_URL ?>">Houses</a></li>
-						<li><a href="<?php echo BASE_URL ?>/portfolio">Портфолио</a></li>
 						<li class="last"><a href="<?php echo BASE_URL ?>/contacts">Contacts</a></li>
                         <li><a href="<?php echo BASE_URL ?>/services">404</a></li>
                     </ul>

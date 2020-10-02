@@ -35,14 +35,18 @@ function parse_arrays($data) {
 	// Forming one array out of a multidimensional by merging values with repetitive keys
 	$merged_arrays = merge_arrays( $data );
 
-	print_r( $merged_arrays );
+	// Sorting keys alphabetically
+	$sorted_array = call_user_func(function(array $a){ksort($a);return $a;}, $merged_arrays);
+
+	// Passing the resulting array to view for rendering
+	createTable( $sorted_array );
 }
 
 
 function merge_arrays($arrays) {
 	$merged_arrays = array();
 
-	// Getting real count of indexes inside a multidimensional
+	// Getting a count of indexes inside a multidimensional
 	$i = count($arrays) - 1;
 
 	while ($i >= 0)  {

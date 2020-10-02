@@ -16,8 +16,6 @@ Choose your houses to display in the table by adding them to model_main.php.
 		        // Sending raw data for further processing in the model
 		        $arrays = parse_arrays($data);
 
-		        // Getting only unique headers
-//                $headers =
 
 	        }
 	        ?>
@@ -25,3 +23,29 @@ Choose your houses to display in the table by adding them to model_main.php.
         </thead>
     </table>
 </section>
+
+
+
+
+<?php
+function createTable($array) {
+    echo ""
+	foreach( $array as $key => $value ) {
+
+    }
+}
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
